@@ -1,0 +1,62 @@
+﻿
+@using PagedList.Mvc;
+@model PagedList.IPagedList<Bike_Store_Api.ViewModels.ProductVM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().product_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().model_year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().list_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().brand_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().category_name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.product_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.model_year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.list_price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brand_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.category_name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.product_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.product_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.product_id })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.PagedListPager(Model, i => Url.Action("Index", "ProductMain", new { i, search = Request.QueryString["search"] }))

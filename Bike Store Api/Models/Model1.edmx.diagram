@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a350883a312e41b88bda33bde2b76a10" Name="Diagram1">
+        <EntityTypeShape EntityType="BikeStoresModel.C__EFMigrationsHistory" Width="1.5" PointX="9.75" PointY="7.625" />
+        <EntityTypeShape EntityType="BikeStoresModel.C__MigrationHistory" Width="1.5" PointX="9.75" PointY="10.625" />
+        <EntityTypeShape EntityType="BikeStoresModel.AspNetRole" Width="1.5" PointX="5.75" PointY="3.375" />
+        <EntityTypeShape EntityType="BikeStoresModel.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="1.875" />
+        <EntityTypeShape EntityType="BikeStoresModel.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="4.625" />
+        <EntityTypeShape EntityType="BikeStoresModel.AspNetUser" Width="1.5" PointX="8" PointY="2.125" />
+        <EntityTypeShape EntityType="BikeStoresModel.sysdiagram" Width="1.5" PointX="11.75" PointY="7.625" />
+        <EntityTypeShape EntityType="BikeStoresModel.brand" Width="1.5" PointX="1.5" PointY="16.875" />
+        <EntityTypeShape EntityType="BikeStoresModel.category" Width="1.5" PointX="1.5" PointY="9.625" />
+        <EntityTypeShape EntityType="BikeStoresModel.product" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BikeStoresModel.stock" Width="1.5" PointX="3" PointY="6.25" />
+        <EntityTypeShape EntityType="BikeStoresModel.customer" Width="1.5" PointX="3" PointY="2.25" />
+        <EntityTypeShape EntityType="BikeStoresModel.order_items" Width="1.5" PointX="7.5" PointY="9.375" />
+        <EntityTypeShape EntityType="BikeStoresModel.order" Width="1.5" PointX="5.25" PointY="9" />
+        <EntityTypeShape EntityType="BikeStoresModel.staff" Width="1.5" PointX="3" PointY="12.375" />
+        <EntityTypeShape EntityType="BikeStoresModel.store" Width="1.5" PointX="0.75" PointY="5.625" />
+        <AssociationConnector Association="BikeStoresModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="BikeStoresModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="BikeStoresModel.FK__products__brand___15502E78" />
+        <AssociationConnector Association="BikeStoresModel.FK__products__catego__145C0A3F" />
+        <AssociationConnector Association="BikeStoresModel.FK__order_ite__produ__276EDEB3" />
+        <AssociationConnector Association="BikeStoresModel.FK__stocks__product___2B3F6F97" />
+        <AssociationConnector Association="BikeStoresModel.FK__stocks__store_id__2A4B4B5E" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__customer__20C1E124" />
+        <AssociationConnector Association="BikeStoresModel.FK__order_ite__order__267ABA7A" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__staff_id__22AA2996" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__store_id__21B6055D" />
+        <AssociationConnector Association="BikeStoresModel.FK__staffs__manager___1DE57479" />
+        <AssociationConnector Association="BikeStoresModel.FK__staffs__store_id__1CF15040" />
+        <AssociationConnector Association="BikeStoresModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
